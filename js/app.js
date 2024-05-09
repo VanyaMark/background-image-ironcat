@@ -23,17 +23,17 @@ slider.style.backgroundImage = `url(${pictures[index]})`;
 
 const handleClickBtnLeft = () => {
   index--;
-  if (index >= 0 && index < 4) {
+  if (index >= 0 && index < pictures.length) {
     console.log(index);
     slider.style.backgroundImage = `url(${pictures[index]})`;
   } else {
-    index = 4;
+    index = pictures.length -1;
     slider.style.backgroundImage = `url(${pictures[index]})`;
   }
 }
 const handleClickBtnRight = () => {
   index++;
-  if (index >= 0 && index <= 4) {
+  if (index >= 0 && index <= pictures.length) {
     console.log(index);
     slider.style.backgroundImage = `url(${pictures[index]})`;
   } else {
